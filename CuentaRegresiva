@@ -1,0 +1,19 @@
+/*crearCuentaRegresiva(numeroInicial)
+Crear una función crearCuentaRegresiva que tome como argumento un número
+entero numeroInicial y que devuelva un array con cuyo primer ítem sea
+numeroInicial y los demás ítems sean números enteros sucesivos descendientes,
+hasta llegar a 0.*/
+
+let num = parseInt(prompt("Ingrese un número: "));
+    while (num == null || /\D/.test(num) || num == "") {
+    num = prompt("Ingrese un número VÁLIDO: ");
+    };
+function CuentaRegresiva(num){
+desc=[]
+for (i = num ; i >= 0; i--){
+    desc.push(i);
+}
+console.log("El array contiene estos valores: "+desc)
+}
+
+CuentaRegresiva(num)
